@@ -1,0 +1,161 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Nostalgic Fever",
+      "subtitle": "KrackHack'25 Track Winner",
+      "date": "January 2025",
+      "category": "Full-Stack Development",
+      "description": "A time-locked memory capsule platform with real-time social interaction and sentiment analysis. Users can create digital memories that unlock at predetermined times, fostering nostalgia and connection.",
+      "longDescription": "Developed a comprehensive platform that allows users to create time-locked memory capsules with advanced social features. The application integrates blockchain technology for memory authenticity verification and AI-powered sentiment analysis to understand the emotional context of user interactions. Features include real-time chat functionality, memory scheduling, and social discovery mechanisms.",
+      "technologies": [
+        "HuggingFace NLP",
+        "WebSocket",
+        "Solidity",
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js"
+      ],
+      "image": "/image.png",
+      "github": "https://github.com/akshatidk29/nostalgic-fever",
+      "live": "https://nostalgic-fever.vercel.app",
+      "achievements": [
+        "Track Winner among 100+ teams",
+        "Best Use of AI Award"
+      ],
+      "features": [
+        "Time-locked memory capsule creation",
+        "Real-time social interaction via WebSocket",
+        "AI-powered sentiment analysis",
+        "Blockchain-based authenticity verification",
+        "Social discovery and sharing"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "TheQuro",
+      "subtitle": "RAG Driven Study Partner",
+      "date": "September 2025",
+      "category": "AI/ML",
+      "description": "An AI-powered study platform that processes PDFs, notes, and images using OCR and embeddings to provide contextual learning assistance through advanced RAG pipeline.",
+      "longDescription": "Built an intelligent study companion that revolutionizes how students interact with their learning materials. The platform uses advanced OCR technology to extract text from images and PDFs, creates semantic embeddings for efficient retrieval, and implements a sophisticated RAG pipeline to provide accurate, context-aware answers from uploaded content.",
+      "technologies": [
+        "Gemini 1.5 Flash",
+        "HuggingFace",
+        "LangChain",
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "FastAPI"
+      ],
+      "image": "",
+      "github": "https://github.com/akshatidk29/thequro",
+      "live": "https://thequro.vercel.app",
+      "achievements": [
+        "Featured in university tech showcase"
+      ],
+      "features": [
+        "PDF and image text extraction via OCR",
+        "Semantic search using embeddings",
+        "RAG-based contextual Q&A system",
+        "Multi-format document support",
+        "Intelligent content organization"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Xpensa",
+      "subtitle": "AI-Powered Personal Finance Tracker",
+      "date": "January 2025",
+      "category": "FinTech",
+      "description": "A comprehensive personal finance management system with AI-driven insights, RAG-based expense querying, and intelligent financial document processing for FrostHack'25.",
+      "longDescription": "Created an advanced personal finance tracker that combines traditional expense tracking with cutting-edge AI capabilities. The system processes financial documents automatically, provides personalized insights through RAG-based querying, and uses agent-based reasoning to offer intelligent financial advice and spending pattern analysis.",
+      "technologies": [
+        "Pathway",
+        "Fetch.AI",
+        "Python",
+        "LangChain",
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "FastAPI"
+      ],
+      "image": "",
+      "github": "https://github.com/akshatidk29/xpensa",
+      "live": "https://xpensa-ai.vercel.app",
+      "achievements": [
+        "Top 10 Finalist at FrostHack'25"
+      ],
+      "features": [
+        "Automated financial document parsing",
+        "RAG-based expense querying system",
+        "AI-powered spending insights",
+        "Agent-based financial reasoning",
+        "Personalized budget recommendations"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Line Maze Solver",
+      "subtitle": "Autonomous Robot Navigation",
+      "date": "December 2024",
+      "category": "Robotics",
+      "description": "An autonomous robot built for IIT Bombay TechFest'24 that uses advanced sensor mapping and PID-based motor control to navigate complex line mazes efficiently.",
+      "longDescription": "Engineered a sophisticated autonomous robot capable of solving complex line mazes using advanced algorithms and custom hardware design. The project involved developing custom path-planning algorithms, implementing PID-based motor control systems, and designing optimized PCB layouts for maximum efficiency and reliability in competitive environments.",
+      "technologies": [
+        "C++",
+        "Arduino",
+        "PID Controllers",
+        "PCB Design",
+        "Sensor Integration",
+        "Path Planning Algorithms"
+      ],
+      "image": "",
+      "github": "https://github.com/akshatidk29/line-maze-solver",
+      "live": "",
+      "achievements": [
+        "Qualified for IIT Bombay TechFest'24 Finals"
+      ],
+      "features": [
+        "Advanced sensor-based navigation",
+        "Custom PCB design for efficiency",
+        "PID-based motor control system",
+        "Real-time path optimization",
+        "Autonomous maze-solving algorithms"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Devgatha",
+      "subtitle": "AI Coding Tutor Platform",
+      "date": "November 2024",
+      "category": "EdTech",
+      "description": "An intelligent coding education platform that provides real-time AI-based code suggestions, debugging assistance, and automated code review with live tutor feedback.",
+      "longDescription": "Developed a comprehensive coding education platform that combines AI-powered assistance with human expertise. The platform offers real-time code suggestions, intelligent debugging support, automated code reviews, and facilitates live interactions between students and tutors for personalized learning experiences.",
+      "technologies": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "OpenAI API",
+        "Socket.io"
+      ],
+      "image": "",
+      "github": "https://github.com/akshatidk29/devgatha",
+      "live": "https://devgatha.vercel.app",
+      "achievements": [
+        "Featured in university innovation showcase"
+      ],
+      "features": [
+        "Real-time AI code suggestions",
+        "Intelligent debugging assistance",
+        "Automated code review system",
+        "Live tutor-student interaction",
+        "Progress tracking and analytics"
+      ]
+    }
+  ]
+}
