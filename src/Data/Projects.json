@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Nostalgic Fever",
-      "subtitle": "KrackHack'25 Track Winner",
+      "subtitle": "KrackHack'25 Track Winner, GDG IIT Mandi",
       "date": "January 2025",
       "category": "Full-Stack Development",
       "description": "A time-locked memory capsule platform with real-time social interaction and sentiment analysis. Users can create digital memories that unlock at predetermined times, fostering nostalgia and connection.",
@@ -17,12 +17,11 @@
         "React",
         "Node.js"
       ],
-      "image": "/image.png",
-      "github": "https://github.com/akshatidk29/nostalgic-fever",
-      "live": "https://nostalgic-fever.vercel.app",
+      "image": "/NostalgicFever.png",
+      "github": "https://github.com/akshatidk29/Nostalgic_Fever",
+      "live": "https://nostalgicfever.onrender.com/",
       "achievements": [
-        "Track Winner among 100+ teams",
-        "Best Use of AI Award"
+        "Winner in Web Development track among 100+ teams"
       ],
       "features": [
         "Time-locked memory capsule creation",
@@ -50,9 +49,9 @@
         "Node.js",
         "FastAPI"
       ],
-      "image": "",
-      "github": "https://github.com/akshatidk29/thequro",
-      "live": "https://thequro.vercel.app",
+      "image": "/image.png",
+      "github": "https://github.com/akshatidk29/TheQuro",
+      "live": "",
       "achievements": [
         "Featured in university tech showcase"
       ],
@@ -74,7 +73,6 @@
       "longDescription": "Created an advanced personal finance tracker that combines traditional expense tracking with cutting-edge AI capabilities. The system processes financial documents automatically, provides personalized insights through RAG-based querying, and uses agent-based reasoning to offer intelligent financial advice and spending pattern analysis.",
       "technologies": [
         "Pathway",
-        "Fetch.AI",
         "Python",
         "LangChain",
         "MongoDB",
@@ -83,11 +81,11 @@
         "Node.js",
         "FastAPI"
       ],
-      "image": "",
-      "github": "https://github.com/akshatidk29/xpensa",
-      "live": "https://xpensa-ai.vercel.app",
+      "image": "/Xpensa.png",
+      "github": "https://github.com/akshatidk29/Xpensa.git",
+      "live": "https://youtu.be/stvG6qNfPeM",
       "achievements": [
-        "Top 10 Finalist at FrostHack'25"
+        "Top 5 Finalist at FrostHack'25"
       ],
       "features": [
         "Automated financial document parsing",
@@ -103,7 +101,7 @@
       "subtitle": "Autonomous Robot Navigation",
       "date": "December 2024",
       "category": "Robotics",
-      "description": "An autonomous robot built for IIT Bombay TechFest'24 that uses advanced sensor mapping and PID-based motor control to navigate complex line mazes efficiently.",
+      "description": "An autonomous robot that uses advanced sensor mapping and PID-based motor control to navigate complex line mazes efficiently.",
       "longDescription": "Engineered a sophisticated autonomous robot capable of solving complex line mazes using advanced algorithms and custom hardware design. The project involved developing custom path-planning algorithms, implementing PID-based motor control systems, and designing optimized PCB layouts for maximum efficiency and reliability in competitive environments.",
       "technologies": [
         "C++",
@@ -113,8 +111,8 @@
         "Sensor Integration",
         "Path Planning Algorithms"
       ],
-      "image": "",
-      "github": "https://github.com/akshatidk29/line-maze-solver",
+      "image": "/LMS.png",
+      "github": "https://github.com/akshatidk29/ProjectX-LMS",
       "live": "",
       "achievements": [
         "Qualified for IIT Bombay TechFest'24 Finals"
@@ -123,7 +121,6 @@
         "Advanced sensor-based navigation",
         "Custom PCB design for efficiency",
         "PID-based motor control system",
-        "Real-time path optimization",
         "Autonomous maze-solving algorithms"
       ]
     },
@@ -143,11 +140,10 @@
         "OpenAI API",
         "Socket.io"
       ],
-      "image": "",
-      "github": "https://github.com/akshatidk29/devgatha",
-      "live": "https://devgatha.vercel.app",
+      "image": "/DevGatha.png",
+      "github": "https://github.com/akshatidk29/DevGatha",
+      "live": "https://devgatha.onrender.com/",
       "achievements": [
-        "Featured in university innovation showcase"
       ],
       "features": [
         "Real-time AI code suggestions",

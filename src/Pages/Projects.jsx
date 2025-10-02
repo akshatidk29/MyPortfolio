@@ -204,11 +204,14 @@ export default function Projects() {
                             </div>
 
                             {/* Project Image Placeholder */}
-                            <div className="h-64 bg-gradient-to-br from-slate-100 to-slate-300 mb-8 flex items-center justify-center">
-                                <div className="text-slate-400 text-8xl font-light">
-                                    {selectedProject.title.charAt(0)}
-                                </div>
+                            <div className="h-64 bg-white mb-8 flex items-center justify-center">
+                                <img
+                                    src={selectedProject.image}
+                                    alt={selectedProject.title}
+                                    className="h-full w-auto max-w-full object-contain transition-transform duration-500 rounded-lg hover:scale-105 border border-gray-400 shadow-sm"
+                                />
                             </div>
+
 
                             {/* Description */}
                             <div className="mb-8">
@@ -276,7 +279,7 @@ export default function Projects() {
                                         href={selectedProject.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center px-6 py-3 bg-slate-900 text-white hover:bg-slate-700 transition-colors"
+                                        className="flex items-center px-6 py-3 bg-slate-900 text-white hover:bg-slate-700 transition-colors rounded-2xl"
                                     >
                                         <Github className="w-4 h-4 mr-2" />
                                         View Code
@@ -287,7 +290,7 @@ export default function Projects() {
                                         href={selectedProject.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center px-6 py-3 border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition-colors"
+                                        className="flex items-center px-6 py-3 border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white rounded-2xl transition-colors"
                                     >
                                         <ExternalLink className="w-4 h-4 mr-2" />
                                         Live Demo
