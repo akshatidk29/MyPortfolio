@@ -23,7 +23,7 @@ export default function Navbar() {
     const socialLinks = [
         { icon: Code, href: "https://codeforces.com/profile/akshat_idk_29" },
         { icon: Linkedin, href: "https://linkedin.com/in/akshat-mittal-511477313" },
-        { icon: Github, href: "https://github.com/yourusername" },
+        { icon: Github, href: "https://github.com/akshatidk29" },
     ];
 
     const handleNavClick = (href) => {

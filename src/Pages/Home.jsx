@@ -35,7 +35,7 @@ export default function Home() {
                             Akshat Mittal
                         </h1>
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                            Computer Science Engineering student at IIT Mandi with a focus on
+                            Computer Science Engineering undergrad at IIT Mandi with a focus on
                             Machine Learning, Deep Learning, and scalable software development.
                         </p>
                         <button

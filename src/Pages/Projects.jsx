@@ -247,7 +247,7 @@ export default function Projects() {
                                     {selectedProject.technologies.map((tech, index) => (
                                         <span
                                             key={index}
-                                            className="px-3 py-1 bg-slate-100 text-slate-700 text-sm border border-slate-200 hover:border-slate-900 transition-colors"
+                                            className="px-3 py-1 bg-slate-100 text-slate-700 text-sm border border-slate-200 rounded-xl hover:border-slate-900 transition-colors"
                                         >
                                             {tech}
                                         </span>
@@ -264,7 +264,6 @@ export default function Projects() {
                                     <div className="space-y-2">
                                         {selectedProject.achievements.map((achievement, index) => (
                                             <div key={index} className="flex items-center space-x-3">
-                                                <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
                                                 <span className="text-slate-700">{achievement}</span>
                                             </div>
                                         ))}
