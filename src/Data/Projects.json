@@ -2,12 +2,141 @@
   "projects": [
     {
       "id": 1,
+      "title": "fakeNET",
+      "subtitle": "Forensic Explainability of Deepfake Detection",
+      "date": "April 2026",
+      "category": "AI Research",
+      "featured": true,
+      "description": "Lightweight explainable deepfake detection and localization — 2.13M parameters, 96.79% accuracy, outperforming 13B-parameter models.",
+      "problem": "Deepfake detectors are either accurate-but-opaque or interpretable-but-weak. Forensic use requires both properties simultaneously.",
+      "approach": "Designed a compact attention-based model for deepfake detection and pixel-level localization with explainable spatial outputs — prioritizing forensic usability over scale.",
+      "highlights": [
+        "2.13M parameter model — compact and deployable",
+        "Attention-based architecture with spatial localization outputs",
+        "Evaluated against state-of-the-art detectors on AIGI-Now benchmarks"
+      ],
+      "impact": [
+        "96.79% accuracy and 96.78% F1 score",
+        "Outperformed SIDA (93.6% accuracy, 13B parameters)",
+        "Ranked 2nd on AIGI-Now benchmarks with 84.53% pixel-balanced accuracy"
+      ],
+      "learnings": [
+        "Designing compact models that compete with much larger ones",
+        "Evaluation on real-world AI-generated image detection benchmarks",
+        "Balancing model explainability with detection performance"
+      ],
+      "technologies": [
+        "PyTorch",
+        "Attention Mechanisms",
+        "Explainable AI",
+        "Python",
+        "Computer Vision"
+      ],
+      "image": "",
+      "github": "https://github.com/akshatidk29/fakeNET",
+      "live": ""
+    },
+    {
+      "id": 2,
+      "title": "Aayojan",
+      "subtitle": "Wedding CRM & Operations Platform",
+      "date": "June 2026",
+      "category": "Full-Stack",
+      "featured": true,
+      "description": "Production-ready wedding CRM with 40+ REST APIs, role-based access across 4 user types, and AI-powered assistance — deployed and live.",
+      "problem": "Wedding planners manage vendors, budgets, timelines, and client communication across disconnected tools, leading to missed deadlines and communication gaps.",
+      "approach": "Built a MERN CRM with JWT authentication, drag-and-drop Kanban workflows, and AI-powered assistance. 40+ REST APIs cover lead management, vendor coordination, budget tracking, document storage, and automated scheduling.",
+      "highlights": [
+        "40+ REST APIs with role-based access across 4 user roles",
+        "Drag-and-drop Kanban workflow management",
+        "Automated email and SMS reminders with scheduled background jobs",
+        "AI-powered assistant for workflow suggestions and queries"
+      ],
+      "impact": [
+        "Deployed and live at wed-aayojan.vercel.app",
+        "End-to-end event operations managed in one platform",
+        "JWT-secured multi-role system with real-time collaboration"
+      ],
+      "learnings": [
+        "Designing role-based access control at API scale",
+        "Reliable scheduling of background jobs in Node.js",
+        "Integrating AI assistance within a workflow-heavy application"
+      ],
+      "technologies": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "JWT",
+        "REST APIs",
+        "AI Integration",
+        "Deployment"
+      ],
+      "image": "/Aayojan.png",
+      "github": "https://github.com/akshatidk29/weddingCRM",
+      "live": "https://wed-aayojan.vercel.app"
+    },
+    {
+      "id": 3,
+      "title": "Multi-Agent Swarm System",
+      "subtitle": "Warehouse Automation with ROS2",
+      "date": "April 2026",
+      "category": "Robotics",
+      "featured": true,
+      "description": "ROS2 swarm of three robots for warehouse exploration, object pickup, and color sorting — trained with PPO over 100K+ steps across parallel environments.",
+      "problem": "Warehouse tasks need coordinated multi-robot behavior with reliable perception and navigation under sensor noise.",
+      "approach": "Implemented ROS2 Humble with Gazebo simulation, trained a PPO navigation policy in Stable-Baselines3, and fused LiDAR with RGB-D vision for multi-robot coordination.",
+      "highlights": [
+        "Distributed exploration and object pickup across 3 robots",
+        "PPO policy trained over 100K+ steps across 4 parallel environments",
+        "LiDAR + RGB-D perception stack for color sorting and navigation"
+      ],
+      "impact": [
+        "3 robots operated autonomously in a 10m × 8m warehouse simulation",
+        "1st place in RL Track and 3rd overall at HCLTech DL Hackathon'26 (50+ teams)"
+      ],
+      "learnings": [
+        "Reward shaping for collaborative multi-agent exploration",
+        "Observation design for stability in multi-agent RL",
+        "Managing sensor noise and sim-to-real considerations"
+      ],
+      "technologies": [
+        "ROS2 Humble",
+        "Gazebo",
+        "PPO",
+        "Stable-Baselines3",
+        "OpenCV",
+        "Python"
+      ],
+      "image": "/MultiAgentSwarm.png",
+      "github": "https://github.com/akshatidk29/swarmROS2",
+      "live": "https://drive.google.com/drive/folders/1rAmYx1uS0PYUlfmj3ElJ-irtzrGSKGEo"
+    },
+    {
+      "id": 4,
       "title": "Nostalgic Fever",
-      "subtitle": "KrackHack'25 Track Winner, GDG IIT Mandi",
+      "subtitle": "Time-Locked Memory Capsule Platform",
       "date": "January 2025",
-      "category": "Full-Stack Development",
-      "description": "A time-locked memory capsule platform with real-time social interaction and sentiment analysis. Users can create digital memories that unlock at predetermined times, fostering nostalgia and connection.",
-      "longDescription": "Developed a comprehensive platform that allows users to create time-locked memory capsules with advanced social features. The application integrates blockchain technology for memory authenticity verification and AI-powered sentiment analysis to understand the emotional context of user interactions. Features include real-time chat functionality, memory scheduling, and social discovery mechanisms.",
+      "category": "Full-Stack",
+      "featured": true,
+      "description": "Time-locked memory capsules with real-time WebSocket chat, ML sentiment analysis, and blockchain-backed image verification.",
+      "problem": "Digital memories feel disposable and easy to alter — people can't trust them to hold meaning over time.",
+      "approach": "Built a MERN platform with scheduled unlocks, WebSocket real-time chat, HuggingFace sentiment analysis, and Solidity hash registry on Ethereum Sepolia for tamper evidence.",
+      "highlights": [
+        "Time-locked capsule creation with scheduled release",
+        "Real-time messaging and reactions during capsule unlocks",
+        "Blockchain-backed image verification via Ethereum Sepolia smart contracts"
+      ],
+      "impact": [
+        "Tested with 100+ users during the hackathon demo",
+        "Sentiment classifier reached ~85% accuracy on validation data",
+        "Won 1st place at KrackHack'25 (100+ teams)"
+      ],
+      "learnings": [
+        "Balancing model latency with live chat UX requirements",
+        "Time-based access control and background job scheduling",
+        "Simple on-chain hashing patterns for integrity verification"
+      ],
       "technologies": [
         "HuggingFace NLP",
         "WebSocket",
@@ -19,26 +148,72 @@
       ],
       "image": "/NostalgicFever.png",
       "github": "https://github.com/akshatidk29/Nostalgic_Fever",
-      "live": "https://nostalgicfever.onrender.com/",
-      "achievements": [
-        "Winner in Web Development track among 100+ teams"
-      ],
-      "features": [
-        "Time-locked memory capsule creation",
-        "Real-time social interaction via WebSocket",
-        "AI-powered sentiment analysis",
-        "Blockchain-based authenticity verification",
-        "Social discovery and sharing"
-      ]
+      "live": "https://nostalgicfever.onrender.com/"
     },
     {
-      "id": 2,
+      "id": 5,
+      "title": "Xpensa",
+      "subtitle": "AI-Powered Personal Finance Tracker",
+      "date": "January 2025",
+      "category": "FinTech",
+      "featured": false,
+      "description": "RAG-based expense querying and financial document parsing with sub-second retrieval across statements and invoices.",
+      "problem": "Expense analysis across bank statements and invoices is slow, error-prone, and requires manual categorization.",
+      "approach": "Built a RAG pipeline over parsed financial documents using Pathway, LangChain, and FastAPI, with an agent layer for reasoning and a MERN front-end.",
+      "highlights": [
+        "Automated parsing for statements and invoices",
+        "RAG search with natural language queries",
+        "Agent-based insights for recurring expense patterns"
+      ],
+      "impact": [
+        "Reduced financial document lookup time from minutes to under 1 second",
+        "Top 5 finalist at FrostHack'25",
+        "Handled real-world documents without additional fine-tuning"
+      ],
+      "learnings": [
+        "Indexing strategies for noisy and varied PDF formats",
+        "Latency tradeoffs in multi-step retrieval pipelines",
+        "Guardrails for sensitive financial data in LLM contexts"
+      ],
+      "technologies": [
+        "Pathway",
+        "LangChain",
+        "FastAPI",
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Python"
+      ],
+      "image": "/Xpensa.png",
+      "github": "https://github.com/akshatidk29/Xpensa",
+      "live": "https://youtu.be/stvG6qNfPeM"
+    },
+    {
+      "id": 6,
       "title": "TheQuro",
-      "subtitle": "RAG Driven Study Partner",
+      "subtitle": "RAG-Driven Study Partner",
       "date": "September 2025",
       "category": "AI/ML",
-      "description": "An AI-powered study platform that processes PDFs, notes, and images using OCR and embeddings to provide contextual learning assistance through advanced RAG pipeline.",
-      "longDescription": "Built an intelligent study companion that revolutionizes how students interact with their learning materials. The platform uses advanced OCR technology to extract text from images and PDFs, creates semantic embeddings for efficient retrieval, and implements a sophisticated RAG pipeline to provide accurate, context-aware answers from uploaded content.",
+      "featured": false,
+      "description": "Multi-modal study assistant for PDFs and images with fast OCR ingestion and contextual Q&A over personal notes.",
+      "problem": "Students need quick, grounded answers across scattered notes, slides, and lecture documents.",
+      "approach": "Built OCR ingestion for PDFs and images, embeddings for retrieval, and a RAG pipeline using Gemini 1.5 Flash, LangChain, and FastAPI.",
+      "highlights": [
+        "Multi-modal ingestion with OCR for PDFs and images",
+        "Context-aware Q&A over personal document collections",
+        "Fast processing pipeline for long documents"
+      ],
+      "impact": [
+        "Processed 200-page documents in under 3 minutes",
+        "Improved answer relevance versus a baseline GPT setup",
+        "Showcased at Engineering Day'25"
+      ],
+      "learnings": [
+        "Chunking and retrieval tuning strategies for long documents",
+        "Evaluation with small-scale user studies",
+        "Prompting techniques for grounded, citation-aware answers"
+      ],
       "technologies": [
         "Gemini 1.5 Flash",
         "HuggingFace",
@@ -46,92 +221,36 @@
         "MongoDB",
         "Express.js",
         "React",
-        "Node.js",
         "FastAPI"
       ],
       "image": "/TheQuro.png",
       "github": "https://github.com/akshatidk29/TheQuro",
-      "live": "https://www.linkedin.com/posts/akshat-mittal-511477313_ai-machinelearning-rag-activity-7376281036860846080-MMaF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-gCR0BACUsNBl5hAEVoq8zw5P0QDngNok",
-      "achievements": [
-        "Featured in university tech showcase"
-      ],
-      "features": [
-        "PDF and image text extraction via OCR",
-        "Semantic search using embeddings",
-        "RAG-based contextual Q&A system",
-        "Multi-format document support",
-        "Intelligent content organization"
-      ]
+      "live": "https://www.linkedin.com/posts/akshat-mittal-511477313_ai-machinelearning-rag-activity-7376281036860846080-MMaF"
     },
     {
-      "id": 3,
-      "title": "Xpensa",
-      "subtitle": "AI-Powered Personal Finance Tracker",
-      "date": "January 2025",
-      "category": "FinTech",
-      "description": "A comprehensive personal finance management system with AI-driven insights, RAG-based expense querying, and intelligent financial document processing for FrostHack'25.",
-      "longDescription": "Created an advanced personal finance tracker that combines traditional expense tracking with cutting-edge AI capabilities. The system processes financial documents automatically, provides personalized insights through RAG-based querying, and uses agent-based reasoning to offer intelligent financial advice and spending pattern analysis.",
-      "technologies": [
-        "Pathway",
-        "Python",
-        "LangChain",
-        "MongoDB",
-        "Express.js",
-        "React",
-        "Node.js",
-        "FastAPI"
-      ],
-      "image": "/Xpensa.png",
-      "github": "https://github.com/akshatidk29/Xpensa.git",
-      "live": "https://youtu.be/stvG6qNfPeM",
-      "achievements": [
-        "Top 5 Finalist at FrostHack'25"
-      ],
-      "features": [
-        "Automated financial document parsing",
-        "RAG-based expense querying system",
-        "AI-powered spending insights",
-        "Agent-based financial reasoning",
-        "Personalized budget recommendations"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Line Maze Solver",
-      "subtitle": "Autonomous Robot Navigation",
-      "date": "December 2024",
-      "category": "Robotics",
-      "description": "An autonomous robot that uses advanced sensor mapping and PID-based motor control to navigate complex line mazes efficiently.",
-      "longDescription": "Engineered a sophisticated autonomous robot capable of solving complex line mazes using advanced algorithms and custom hardware design. The project involved developing custom path-planning algorithms, implementing PID-based motor control systems, and designing optimized PCB layouts for maximum efficiency and reliability in competitive environments.",
-      "technologies": [
-        "C++",
-        "Arduino",
-        "PID Controllers",
-        "PCB Design",
-        "Sensor Integration",
-        "Path Planning Algorithms"
-      ],
-      "image": "/LMS.png",
-      "github": "https://github.com/akshatidk29/ProjectX-LMS",
-      "live": "https://www.linkedin.com/posts/akshat-mittal-511477313_teamwork-innovation-engineering-activity-7280544402287034368-63Xp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-gCR0BACUsNBl5hAEVoq8zw5P0QDngNok",
-      "achievements": [
-        "Qualified for IIT Bombay TechFest'24 Finals"
-      ],
-      "features": [
-        "Advanced sensor-based navigation",
-        "Custom PCB design for efficiency",
-        "PID-based motor control system",
-        "Autonomous maze-solving algorithms"
-      ]
-    },
-    {
-      "id": 5,
+      "id": 7,
       "title": "Devgatha",
       "subtitle": "AI Coding Tutor Platform",
       "date": "November 2024",
       "category": "EdTech",
-      "description": "An intelligent coding education platform that provides real-time AI-based code suggestions, debugging assistance, and automated code review with live tutor feedback.",
-      "longDescription": "Developed a comprehensive coding education platform that combines AI-powered assistance with human expertise. The platform offers real-time code suggestions, intelligent debugging support, automated code reviews, and facilitates live interactions between students and tutors for personalized learning experiences.",
+      "featured": false,
+      "description": "Live coding tutor with real-time AI suggestions, automated code reviews, and tutor-student session management.",
+      "problem": "Beginners need immediate, contextual feedback beyond static lessons — but live tutors are expensive and unavailable on demand.",
+      "approach": "Built a MERN platform with Socket.io for live sessions and AI services for code suggestions, automated reviews, and debugging guidance.",
+      "highlights": [
+        "Real-time AI code suggestions via WebSocket",
+        "Automated code review and debugging guidance",
+        "Structured live tutor-student session management"
+      ],
+      "impact": [
+        "Delivered structured feedback loops for beginner learners",
+        "Live at devgatha.onrender.com"
+      ],
+      "learnings": [
+        "Feedback UX design for beginners vs. experienced learners",
+        "Session reliability and rate limiting in real-time systems",
+        "Human-in-the-loop tutoring interaction design"
+      ],
       "technologies": [
         "MongoDB",
         "Express.js",
@@ -142,16 +261,42 @@
       ],
       "image": "/DevGatha.png",
       "github": "https://github.com/akshatidk29/DevGatha",
-      "live": "https://devgatha.onrender.com/",
-      "achievements": [
+      "live": "https://devgatha.onrender.com/"
+    },
+    {
+      "id": 8,
+      "title": "Line Maze Solver",
+      "subtitle": "Autonomous Robot Navigation",
+      "date": "December 2024",
+      "category": "Robotics",
+      "featured": false,
+      "description": "Custom line maze robot with PID motor control and sensor-driven path logic — qualified for IIT Bombay TechFest'24 finals.",
+      "problem": "Fast maze navigation requires stable motor control under sensor noise and reliable handling of intersections.",
+      "approach": "Designed a custom PCB for compact sensor integration, tuned PID control loops, and built path logic for tight turns and complex intersections.",
+      "highlights": [
+        "Custom PCB design for compact IR sensor integration",
+        "PID-tuned motor control for speed and stability",
+        "Path planning logic for complex line maze configurations"
       ],
-      "features": [
-        "Real-time AI code suggestions",
-        "Intelligent debugging assistance",
-        "Automated code review system",
-        "Live tutor-student interaction",
-        "Progress tracking and analytics"
-      ]
+      "impact": [
+        "Qualified for IIT Bombay TechFest'24 finals",
+        "Reliable competitive-speed navigation in live conditions"
+      ],
+      "learnings": [
+        "Hardware-software co-design tradeoffs",
+        "Calibration and noise filtering for IR sensors",
+        "Control stability under varying speed constraints"
+      ],
+      "technologies": [
+        "C++",
+        "Arduino",
+        "PID Control",
+        "PCB Design",
+        "Sensor Integration"
+      ],
+      "image": "/LMS.png",
+      "github": "https://github.com/akshatidk29/ProjectX-LMS",
+      "live": "https://www.linkedin.com/posts/akshat-mittal-511477313_teamwork-innovation-engineering-activity-7280544402287034368-63Xp"
     }
   ]
 }
