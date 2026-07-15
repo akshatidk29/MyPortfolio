@@ -1,202 +1,119 @@
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import projectsData from "../Data/Projects.json";
+import HeroCube from "../Components/HeroCube";
+
+const featured = projectsData.projects.filter((p) => p.featured).slice(0, 3);
 
 export default function Home() {
-    const fadeInUp = {
-        initial: { opacity: 0, y: 30 },
-        animate: { opacity: 1, y: 0 },
-        transition: { duration: 0.6 },
-    };
+  return (
+    <main>
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      <section className="min-h-screen flex flex-col justify-center pt-24 pb-20">
+        <div className="container">
+          <div className="grid lg:grid-cols-[1fr_auto] items-center gap-12">
+            <div className="hero-animate max-w-2xl">
+              <p className="eyebrow-accent">CSE @ IIT Mandi · Founder, theTwoCubes</p>
 
-    const staggerChildren = {
-        animate: {
-            transition: {
-                staggerChildren: 0.1,
-            },
-        },
-    };
+              <h1
+                className="mt-5 text-[color:var(--ink)]"
+                style={{ fontSize: "clamp(3.25rem, 7vw, 5.5rem)" }}
+              >
+                Akshat Mittal
+              </h1>
 
-    return (
-        <div className="min-h-screen bg-slate-50">
-            <motion.section
-                className="bg-slate-900 text-white py-35"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
-            >
-                <div className="max-w-6xl mx-auto px-6">
-                    <motion.div
-                        className="max-w-3xl"
-                        variants={fadeInUp}
-                        initial="initial"
-                        animate="animate"
-                    >
-                        <h1 className="text-5xl font-light tracking-tight mb-6">
-                            Akshat Mittal
-                        </h1>
-                        <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                            Computer Science Engineering undergrad at IIT Mandi with a focus on
-                            Machine Learning, Deep Learning, and scalable software development.
-                        </p>
-                        <button
-                            className="inline-flex items-center px-8 py-3 bg-white text-slate-900 font-medium rounded-2xl hover:bg-slate-100 transition-colors duration-300"
-                            onClick={() => (window.location.href = "/projects")}
-                        >
-                            View Projects
-                        </button>
-                    </motion.div>
-                </div>
-            </motion.section>
+              <p
+                className="mt-6 text-[color:var(--ink-muted)] leading-relaxed"
+                style={{ fontSize: "1.0625rem", maxWidth: "620px" }}
+              >
+                I'm a software engineer and founder of theTwoCubes, passionate about
+                building intelligent software that solves real-world problems. My work
+                spans AI powered automation, scalable backend systems, full-stack web
+                applications, developer tools, and modern cloud-native software. I enjoy
+                designing systems from the ground up, from architecture and APIs to clean
+                user experiences, while continuously exploring new technologies in
+                artificial intelligence and distributed systems.
+              </p>
 
-            <div className="max-w-6xl mx-auto px-6 py-16">
-                {/* Education */}
-                <motion.section
-                    className="mb-20"
-                    variants={staggerChildren}
-                    initial="initial"
-                    animate="animate"
+              <div className="flex flex-wrap items-center gap-3 mt-8">
+                <Link to="/work" className="btn btn-outline">
+                  View Work <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link to="/studio" className="btn btn-outline">
+                  Studio <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+                <a
+                  href="/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost"
                 >
-                    <motion.h2
-                        className="text-2xl font-light text-slate-900 mb-8 uppercase tracking-wider"
-                        variants={fadeInUp}
-                    >
-                        Education
-                    </motion.h2>
-                    <motion.div
-                        className="border-l-2 border-slate-900 pl-8"
-                        variants={fadeInUp}
-                    >
-                        <h3 className="text-xl font-medium text-slate-900 mb-2">
-                            Indian Institute of Technology, Mandi
-                        </h3>
-                        <div className="text-slate-600 mb-4">
-                            <p className="mb-1">
-                                Bachelor of Technology in Computer Science and Engineering
-                            </p>
-                            <p className="text-sm">August 2024 – Present | CGPA: 9.73</p>
-                        </div>
-                        <p className="text-slate-500 text-sm">
-                            Relevant Coursework: Data Structures and Algorithms, Data Science
-                            I-III
-                        </p>
-                    </motion.div>
-                </motion.section>
-
-                {/* Technical Skills */}
-                <motion.section
-                    className="mb-20"
-                    variants={staggerChildren}
-                    initial="initial"
-                    animate="animate"
-                >
-                    <motion.h2
-                        className="text-2xl font-light text-slate-900 mb-8 uppercase tracking-wider"
-                        variants={fadeInUp}
-                    >
-                        Technical Expertise
-                    </motion.h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <motion.div
-                            className="border border-slate-400 p-6 rounded-3xl hover:border-slate-900 transition-colors duration-300"
-                            variants={fadeInUp}
-                        >
-                            <h3 className="font-medium text-slate-900 mb-4 uppercase tracking-wider text-sm">
-                                Languages
-                            </h3>
-                            <p className="text-slate-600">Python, C, C++</p>
-                        </motion.div>
-                        <motion.div
-                            className="border border-slate-400 p-6 rounded-3xl hover:border-slate-900 transition-colors duration-300"
-                            variants={fadeInUp}
-                        >
-                            <h3 className="font-medium text-slate-900 mb-4 uppercase tracking-wider text-sm">
-                                Frameworks
-                            </h3>
-                            <p className="text-slate-600">Scikit-Learn, TensorFlow, MERN Stack</p>
-                        </motion.div>
-                        <motion.div
-                            className="border border-slate-400 p-6 rounded-3xl hover:border-slate-900 transition-colors duration-300"
-                            variants={fadeInUp}
-                        >
-                            <h3 className="font-medium text-slate-900 mb-4 uppercase tracking-wider text-sm">
-                                Tools
-                            </h3>
-                            <p className="text-slate-600">Linux, Git, GitHub</p>
-                        </motion.div>
-                    </div>
-                </motion.section>
-
-                {/* Recognition */}
-                <section className="mb-20">
-                    <h2 className="text-2xl font-light text-slate-900 mb-8 uppercase tracking-wider">
-                        Recognition
-                    </h2>
-                    <div className="border-l-2 border-blue-900 pl-6 space-y-6">
-                        {[
-                            {
-                                place: "Track Winner",
-                                title: "KrackHack'25 ",
-                                desc: "Google Developers Group, IIT Mandi",
-                            },
-                            {
-                                place: "2nd Place",
-                                title: "Orion Astrathon",
-                                desc: "ML Hackathon, Techfest, IIT Mandi",
-                            },
-                            {
-                                place: "2nd Place",
-                                title: "Space Code Competition",
-                                desc: "ML Hackathon, STAC, IIT Mandi",
-                            },
-                            {
-                                place: "6th Place",
-                                title: "Coding Contest",
-                                desc: "Kamand Prompt, IIT Mandi",
-                            },
-                        ].map((item, idx) => (
-                            <div key={idx} className="pl-4">
-                                <h3 className="text-xl font-medium text-slate-900">
-                                    <span className="text-sm text-gray-800">{item.place} ,  </span>{item.title}
-                                </h3>
-                                <p className="text-slate-600 text-sm mt-1">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                {/* Leadership & Service */}
-                <section className="mb-20">
-                    <h2 className="text-2xl font-light text-slate-900 mb-8 uppercase tracking-wider">
-                        Leadership & Service
-                    </h2>
-                    <div className="border-l-2 border-blue-900 pl-6 space-y-6">
-                        {[
-                            {
-                                role: "Core Member, Heuristics",
-                                org: "Programming Club, IIT Mandi",
-                            },
-                            {
-                                role: "Core Member, AI/ML",
-                                org: "Google Developers Group, IIT Mandi",
-                            },
-                            {
-                                role: "Academic Sub-Counselor",
-                                org: "CSE Batch 2024",
-                            },
-                            {
-                                role: "Volunteer",
-                                org: "National Service Scheme, IIT Mandi",
-                            },
-                        ].map((item, idx) => (
-                            <div key={idx} className="pl-4">
-                                <h3 className="text-xl font-medium text-slate-900">{item.role}</h3>
-                                <p className="text-slate-600 text-sm mt-1">{item.org}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+                  Resume ↗
+                </a>
+              </div>
             </div>
 
+            <HeroCube />
+          </div>
         </div>
-    );
+      </section>
+
+      {/* ── Selected Work ─────────────────────────────────────────────────── */}
+      <section className="section-white border-t border-[color:var(--line)] py-20">
+        <div className="container">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <p className="eyebrow">Work</p>
+              <h2
+                className="mt-2 text-[color:var(--ink)]"
+                style={{ fontSize: "1.75rem" }}
+              >
+                Selected projects
+              </h2>
+            </div>
+            <Link to="/work" className="link-arrow text-sm hidden md:inline-flex">
+              All projects <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div>
+            {featured.map((p, i) => (
+              <Link
+                key={p.id}
+                to="/work"
+                className="flex items-start gap-6 py-6 border-b border-[color:var(--line)] last:border-0 group -mx-4 px-4 rounded-sm transition-colors duration-150 hover:bg-[color:var(--accent-bg)]"
+              >
+                <span
+                  className="flex-shrink-0 mt-0.5 w-7 text-xs text-[color:var(--ink-faint)]"
+                  style={{ fontFamily: "monospace", fontVariantNumeric: "tabular-nums" }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-[color:var(--ink)] group-hover:text-[color:var(--accent)] transition-colors duration-150">
+                    {p.title}
+                  </p>
+                  <p className="text-sm text-[color:var(--ink-muted)] mt-1 leading-relaxed">
+                    {p.description}
+                  </p>
+                </div>
+
+                <div className="flex-shrink-0 flex items-center gap-3 mt-0.5">
+                  <span className="tag hidden sm:inline-block">{p.category}</span>
+                  <ArrowUpRight className="w-4 h-4 text-[color:var(--ink-faint)] group-hover:text-[color:var(--accent)] transition-colors duration-150" />
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 md:hidden">
+            <Link to="/work" className="link-arrow text-sm">
+              All projects <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

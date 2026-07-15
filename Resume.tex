@@ -1,0 +1,145 @@
+\documentclass[a4paper,10pt]{article}
+
+% Fonts & Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{textcomp} % for Unicode minus and other symbols
+\usepackage{enumitem}
+
+% Page Setup
+\usepackage[margin=0.20in]{geometry}
+\usepackage{parskip} 
+\setlength{\parskip}{7pt}
+
+% Hyperlinks
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref} % clickable links in blue
+
+% Lists
+\usepackage{enumitem} % better list control
+\setlist[itemize]{leftmargin=1.2em, noitemsep, topsep=0pt} % compact item spacing
+
+% Section Formatting
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\titlerule] % section style with line
+\titlespacing*{\section}{0pt}{4pt}{4pt} % spacing around sections
+
+% Layout Helpers
+\usepackage{tabularx} % flexible header table
+
+\begin{document}
+
+% Header
+\noindent
+{\LARGE \textbf{Akshat Mittal}}\\[4pt]
+\noindent
+\href{mailto:akshatmittal2024@gmail.com}{akshatmittal2024@gmail.com} \hspace{2pt} $|$ \hspace{2pt}
++91 8766226219 \hspace{2pt} $|$ \hspace{2pt}
+\href{http://www.linkedin.com/in/akshat-mittal-511477313}{LinkedIn} \hspace{2pt} $|$ \hspace{2pt}
+\href{https://github.com/akshatidk29/}{GitHub} \hspace{2pt} $|$ \hspace{2pt}
+\href{https://codeforces.com/profile/akshat_idk_29}{Codeforces}
+\vspace{4pt}
+
+% Education
+\vspace{3pt}
+\section*{Education}
+\vspace{3pt}
+\textbf{Indian Institute of Technology, Mandi} \hfill Himachal Pradesh, India\\
+B.Tech in Computer Science and Engineering \hfill August 2024 -- Present\\
+\textbf{CGPA:} 9.7/10 \\
+\textbf{Relevant Coursework:} Data Structures \& Algorithms, Design of Algorithms, DBMS, Formal Languages \& Automata Theory, Computer Organization, Probability, Machine Learning, Deep Learning
+
+% Technical Skills
+\vspace{3pt}
+\section*{Technical Skills}
+\vspace{3pt}
+\textbf{Languages:} Python, C, C++, SQL, Bash\\
+\textbf{Frameworks:} React.js, Express.js, FastAPI, PyTorch, Scikit-Learn\\
+\textbf{Tools:} Linux, Git, Docker, Postman, VS Code, Nginx, Vim\\
+\textbf{Concepts:} Data Structures, Database Systems, Object-Oriented Programming, Shell Scripting, UNIX Processes, ML/DL
+
+% Projects
+\vspace{3pt}
+\section*{Projects}
+\vspace{3pt}
+
+\textbf{Aayojan} -- Wedding CRM \& Operations Platform
+\hfill \href{https://github.com/akshatidk29/weddingCRM}{GitHub} $\vert$
+\href{https://wed-aayojan.vercel.app}{Live} \\
+{\small MERN Stack, REST APIs, MongoDB, JWT, Deployment, AI Integration}
+\hfill June 2026
+\normalsize
+\begin{itemize}[label=--]
+    \item Developed and deployed a production-ready full-stack CRM comprising 40+ REST APIs, enabling role-based management of leads, weddings, vendors, budgets, documents, and workflows across 4 user roles.
+    \item Implemented JWT authentication, AI-powered assistance, automated email/SMS reminders, drag-and-drop Kanban workflows, and scheduled background jobs to streamline end-to-end event operations.
+\end{itemize}
+
+
+\textbf{Nostalgic Fever} -- Time-Locked Memory Capsule Platform
+\hfill \href{https://github.com/akshatidk29/Nostalgic_Fever}{GitHub} $\vert$
+\href{https://www.youtube.com/watch?v=AxjyAr-QWfM}{Youtube} \\
+{\small MERN Stack, WebSockets, REST APIs, Solidity, Full Stack Development}
+\hfill January 2025
+\normalsize
+\begin{itemize}[label=--]
+    \item Engineered a full-stack social platform enabling users to securely create and unlock digital memory capsules after a specified time, with low-latency real-time messaging using WebSockets.
+    \item Built blockchain-backed image verification using Ethereum Sepolia smart contracts for immutable proof of ownership, and integrated ML-based sentiment analysis to personalize user interactions.
+\end{itemize}
+
+
+\textbf{fakeNET} -- Forensic Explainability of Deepfake Detection, Research Project
+\hfill \href{https://github.com/akshatidk29/fakeNET}{GitHub}  \\
+{\small PyTorch, Attention Mechanisms, Explainable AI, Deepfake Forensics}
+\hfill April 2025
+\normalsize
+\begin{itemize}[label=--]
+\item Designed a lightweight and explainable deepfake detection and localization model (2.13M parameters).
+\item Achieved 96.79\% accuracy and 96.78\% F1, outperforming all compared methods including \href{https://arxiv.org/abs/2412.04292}{SIDA} (93.6\% accuracy, 13B)
+\item Ranked 2nd among evaluated open-source detectors on AIGI-Now benchmarks with 84.53\% pixel-balanced accuracy
+\end{itemize}
+
+
+%Experience
+\vspace{2pt}
+\section*{Experience}
+\vspace{2pt}
+
+\textbf{Founder} -- \href{https://www.thetwocubes.com}{theTwoCubes}
+\hfill October 2024 -- Present
+\begin{itemize}[label=--]
+    \item Founded and lead a software consulting firm, delivering 2,500 USD worth of software solutions while managing end-to-end product development, deployment, and client communication.
+    \item Delivered a computer vision system for \href{https://advoice.co.in/}{adVoice Inc.} that automatically detects optimal logo placement regions on garments and overlays logos using YOLOv11 and openCV; currently in production for large-scale image processing.
+    \item Delivered a back-office automation platform integrating outlook email processing, otp relay workflows, odoo ERP, and LAN communication, significantly reducing manual intervention and streamlining operations, currently deployed in production.
+\end{itemize}
+
+
+\textbf{Inter IIT Tech Meet 14.0} -- Algorithmic Trading Problem Statement, Ebullient Securities   
+\hfill December 2025
+\begin{itemize}[label=--]
+    \item Developed a modular Python pipeline for preprocessing, feature engineering, model training, and large-scale backtesting on 1-second financial tick data spanning one year.
+    \item Designed a regime-aware gated LSTM with attention, achieving 26.16\% annualized returns, calmar ratio of 20.60, and -1.27\% maximum drawdown.
+\end{itemize}
+
+% Achievements
+\vspace{2pt}
+\section*{Achievements}
+\vspace{2pt}
+\begin{itemize}[label=--]
+    \item Achieved rating of 1360 on Codeforces - Solved 750+ algorithmic and competitive programming problems.
+    \item Won 1st place among 100+ teams at KrackHack'25 Hackathon, GDG IIT Mandi  
+    \item Won 1st place in RL Track and 3rd place overall among 50+ teams at HCLTech'26 Hackathon.  
+    \item Secured 2nd position among 150+ teams at Orion Astrathon (ML Hackathon), IIT Mandi
+    \item Secured 2nd position among 80+ teams at ML Space Code Competition, IIT Mandi
+\end{itemize}
+
+% Volunteering & PORs
+\vspace{2pt}
+\section*{Leadership \& Activities}
+\vspace{2pt}
+\begin{itemize}[label=--]
+    \item Academic Sub-Counselor, Computer Science Batch 2024
+    \item ML Developer, Google Developers Group, IIT Mandi - Organized KrackHack 2026 for 800+ participants, leading the ML track, problem design, sponsorship coordination, and community engagement.
+    \item Upcoming Co-coordinator, ACM, IIT Mandi - Organized competitive programming contests, created and validated problem sets.
+\end{itemize}
+
+\end{document}

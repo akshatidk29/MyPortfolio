@@ -1,51 +1,99 @@
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
+const links = [
+  { label: "Email", display: "akshatmittal2024@gmail.com", href: "mailto:akshatmittal2024@gmail.com", external: false },
+  { label: "GitHub", display: "akshatidk29", href: "https://github.com/akshatidk29", external: true },
+  { label: "LinkedIn", display: "Akshat Mittal", href: "https://www.linkedin.com/in/akshat-mittal-511477313", external: true },
+  { label: "Resume", display: "Download PDF", href: "/Resume.pdf", external: true },
+];
 
-const Footer = () => {
-    return (
-        <div><motion.section
-            className="bg-slate-900 text-white py-16"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+export default function Footer() {
+  return (
+    <footer id="contact" style={{ backgroundColor: "#0F0F0F", scrollMarginTop: "80px" }}>
+      <div className="container pt-20 pb-12">
+
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+
+          {/* Heading */}
+          <div>
+            <p className="eyebrow-light mb-5">Contact</p>
+            <br />
+            <h2
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
+                fontWeight: "normal",
+                letterSpacing: "-0.025em",
+                lineHeight: 1.15,
+                color: "#FFFFFF",
+              }}
+            >
+              Let's build something together.
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "0.9375rem",
+                lineHeight: 1.65,
+                color: "rgba(255,255,255,0.5)",
+                marginTop: "16px",
+                maxWidth: "340px",
+              }}
+            >
+              Open to internships, research collaborations, and interesting problems.
+              <br />
+              Based at IIT Mandi, India.
+            </p>
+          </div>
+
+          {/* Links */}
+          <div style={{ paddingTop: "4px" }}>
+            {links.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "14px 0",
+                  borderBottom: "1px solid rgba(255,255,255,0.08)",
+                  textDecoration: "none",
+                  transition: "border-color 0.15s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = "rgba(255,255,255,0.22)")}
+                onMouseLeave={(e) => (e.currentTarget.style.borderBottomColor = "rgba(255,255,255,0.08)")}
+              >
+                <span style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "rgba(255,255,255,0.65)" }}>
+                  {item.label}
+                </span>
+                <span style={{ fontFamily: "var(--font-body)", fontSize: "0.8125rem", color: "rgba(255,255,255,0.35)" }}>
+                  {item.display} ↗
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div
+          style={{
+            marginTop: "56px",
+            paddingTop: "20px",
+            borderTop: "1px solid rgba(255,255,255,0.08)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
         >
-            <div className="max-w-6xl mx-auto px-6">
-                <h2 className="text-2xl font-light mb-8 uppercase tracking-wider">
-                    Connect
-                </h2>
-                <p className="text-slate-300 mb-8 max-w-2xl">
-                    Open to discussing opportunities in machine learning, software
-                    development, and innovative technology projects.
-                </p>
-                <div className="flex flex-wrap gap-8">
-                    <a
-                        href="https://mail.google.com/mail/?view=cm&to=akshatmittal2024@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-slate-300 transition-colors duration-300 uppercase tracking-wider text-sm"
-                    >
-                        Email
-                    </a>
-                    <a
-                        href="http://www.linkedin.com/in/akshat-mittal-511477313"
-                        className="text-white hover:text-slate-300 transition-colors duration-300 uppercase tracking-wider text-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-                    <a
-                        href="https://github.com/akshatidk29"
-                        className="text-white hover:text-slate-300 transition-colors duration-300 uppercase tracking-wider text-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </motion.section></div>
-    )
+          <span style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "rgba(255,255,255,0.2)" }}>
+            Akshat Mittal
+          </span>
+          <span style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "rgba(255,255,255,0.2)" }}>
+            Updated July 2026
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer
