@@ -104,7 +104,7 @@ export default function Studio() {
                 href="https://thetwocubes.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-solid"
+                className="btn btn-outline"
               >
                 thetwocubes.com <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
@@ -259,7 +259,7 @@ export default function Studio() {
             description and we'll set up a call.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="mailto:akshatmittal2024@gmail.com" className="btn btn-solid">
+            <a href="mailto:akshatmittal2024@gmail.com" className="btn btn-outline">
               akshatmittal2024@gmail.com
             </a>
             <a
