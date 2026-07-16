@@ -5,7 +5,7 @@ import projectsData from "../Data/Projects.json";
 const categories = ["All", ...Array.from(new Set(projectsData.projects.map((p) => p.category)))];
 
 export default function Work() {
-  const [selected,  setSelected]  = useState(null);
+  const [selected, setSelected] = useState(null);
   const [activeTab, setActiveTab] = useState("All");
 
   const filtered =
@@ -25,6 +25,7 @@ export default function Work() {
           >
             Projects
           </h1>
+          <br />
           <p
             className="text-[color:var(--ink-muted)] mt-4 leading-relaxed"
             style={{ fontSize: "1.0625rem", maxWidth: "480px" }}
@@ -43,11 +44,10 @@ export default function Work() {
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`px-3.5 py-1.5 text-xs font-medium rounded whitespace-nowrap transition-colors duration-150 ${
-                  activeTab === cat
+                className={`px-3.5 py-1.5 text-xs font-medium rounded whitespace-nowrap transition-colors duration-150 ${activeTab === cat
                     ? "bg-[color:var(--ink)] text-white"
                     : "text-[color:var(--ink-muted)] hover:text-[color:var(--ink)] hover:bg-[color:var(--line)]"
-                }`}
+                  }`}
               >
                 {cat}
               </button>

@@ -6,13 +6,13 @@ const experience = [
     period: "Oct 2024 – Present",
     points: [
       "Founded and lead a software consulting studio, delivering production software while managing end-to-end product development, deployment, and client communication.",
-      "Delivered a computer vision system using YOLOv11 and OpenCV — automatically detects optimal logo placement on garments; in production handling large image volumes.",
-      "Delivered a back-office automation platform integrating Outlook email processing, OTP relay workflows, Odoo ERP, and LAN communication — reducing manual intervention significantly.",
+      "Delivered a computer vision system using YOLOv11 and OpenCV, automatically detects optimal logo placement on garments; in production handling large image volumes.",
+      "Delivered a back-office automation platform integrating Outlook email processing, OTP relay workflows, Odoo ERP, and LAN communication, reducing manual intervention significantly.",
     ],
   },
   {
     title: "Inter IIT Tech Meet 14.0",
-    org: "Algorithmic Trading — Ebullient Securities",
+    org: "Algorithmic Trading, Ebullient Securities",
     orgHref: null,
     period: "December 2025",
     points: [
@@ -82,7 +82,7 @@ export default function About() {
       <section className="section-white py-20 border-t border-[color:var(--line)]">
         <div className="container">
           <p className="eyebrow mb-10">Experience</p>
-
+          <br/>
           <div className="space-y-12">
             {experience.map((item, i) => (
               <div
@@ -200,7 +200,7 @@ export default function About() {
       <section className="section-dark py-20">
         <div className="container">
           <p className="eyebrow-light mb-10">Recognition</p>
-
+          <br/>
           <div className="grid md:grid-cols-2 gap-12 md:gap-20">
             {/* Competitions */}
             <div>

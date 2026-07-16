@@ -7,11 +7,11 @@
       "date": "April 2026",
       "category": "AI Research",
       "featured": true,
-      "description": "Lightweight explainable deepfake detection and localization — 2.13M parameters, 96.79% accuracy, outperforming 13B-parameter models.",
+      "description": "Lightweight explainable deepfake detection and localization, 2.13M parameters, 96.79% accuracy, outperforming 13B-parameter models.",
       "problem": "Deepfake detectors are either accurate-but-opaque or interpretable-but-weak. Forensic use requires both properties simultaneously.",
-      "approach": "Designed a compact attention-based model for deepfake detection and pixel-level localization with explainable spatial outputs — prioritizing forensic usability over scale.",
+      "approach": "Designed a compact attention-based model for deepfake detection and pixel-level localization with explainable spatial outputs, prioritizing forensic usability over scale.",
       "highlights": [
-        "2.13M parameter model — compact and deployable",
+        "2.13M parameter model, compact and deployable",
         "Attention-based architecture with spatial localization outputs",
         "Evaluated against state-of-the-art detectors on AIGI-Now benchmarks"
       ],
@@ -43,7 +43,7 @@
       "date": "June 2026",
       "category": "Full-Stack",
       "featured": true,
-      "description": "Production-ready wedding CRM with 40+ REST APIs, role-based access across 4 user types, and AI-powered assistance — deployed and live.",
+      "description": "Production-ready wedding CRM with 40+ REST APIs, role-based access across 4 user types, and AI-powered assistance, deployed and live.",
       "problem": "Wedding planners manage vendors, budgets, timelines, and client communication across disconnected tools, leading to missed deadlines and communication gaps.",
       "approach": "Built a MERN CRM with JWT authentication, drag-and-drop Kanban workflows, and AI-powered assistance. 40+ REST APIs cover lead management, vendor coordination, budget tracking, document storage, and automated scheduling.",
       "highlights": [
@@ -83,7 +83,7 @@
       "date": "April 2026",
       "category": "Robotics",
       "featured": true,
-      "description": "ROS2 swarm of three robots for warehouse exploration, object pickup, and color sorting — trained with PPO over 100K+ steps across parallel environments.",
+      "description": "ROS2 swarm of three robots for warehouse exploration, object pickup, and color sorting, trained with PPO over 100K+ steps across parallel environments.",
       "problem": "Warehouse tasks need coordinated multi-robot behavior with reliable perception and navigation under sensor noise.",
       "approach": "Implemented ROS2 Humble with Gazebo simulation, trained a PPO navigation policy in Stable-Baselines3, and fused LiDAR with RGB-D vision for multi-robot coordination.",
       "highlights": [
@@ -120,7 +120,7 @@
       "category": "Full-Stack",
       "featured": true,
       "description": "Time-locked memory capsules with real-time WebSocket chat, ML sentiment analysis, and blockchain-backed image verification.",
-      "problem": "Digital memories feel disposable and easy to alter — people can't trust them to hold meaning over time.",
+      "problem": "Digital memories feel disposable and easy to alter, people can't trust them to hold meaning over time.",
       "approach": "Built a MERN platform with scheduled unlocks, WebSocket real-time chat, HuggingFace sentiment analysis, and Solidity hash registry on Ethereum Sepolia for tamper evidence.",
       "highlights": [
         "Time-locked capsule creation with scheduled release",
@@ -235,7 +235,7 @@
       "category": "EdTech",
       "featured": false,
       "description": "Live coding tutor with real-time AI suggestions, automated code reviews, and tutor-student session management.",
-      "problem": "Beginners need immediate, contextual feedback beyond static lessons — but live tutors are expensive and unavailable on demand.",
+      "problem": "Beginners need immediate, contextual feedback beyond static lessons, but live tutors are expensive and unavailable on demand.",
       "approach": "Built a MERN platform with Socket.io for live sessions and AI services for code suggestions, automated reviews, and debugging guidance.",
       "highlights": [
         "Real-time AI code suggestions via WebSocket",
@@ -270,7 +270,7 @@
       "date": "December 2024",
       "category": "Robotics",
       "featured": false,
-      "description": "Custom line maze robot with PID motor control and sensor-driven path logic — qualified for IIT Bombay TechFest'24 finals.",
+      "description": "Custom line maze robot with PID motor control and sensor-driven path logic, qualified for IIT Bombay TechFest'24 finals.",
       "problem": "Fast maze navigation requires stable motor control under sensor noise and reliable handling of intersections.",
       "approach": "Designed a custom PCB for compact sensor integration, tuned PID control loops, and built path logic for tight turns and complex intersections.",
       "highlights": [

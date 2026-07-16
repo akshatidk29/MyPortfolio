@@ -8,7 +8,7 @@ const featured = projectsData.projects.filter((p) => p.featured).slice(0, 3);
 export default function Home() {
   return (
     <main>
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      {/*  Hero  */}
       <section className="min-h-screen flex flex-col justify-center pt-24 pb-20">
         <div className="container">
           <div className="grid lg:grid-cols-[1fr_auto] items-center gap-12">
@@ -21,7 +21,7 @@ export default function Home() {
               >
                 Akshat Mittal
               </h1>
-
+              <br />
               <p
                 className="mt-6 text-[color:var(--ink-muted)] leading-relaxed"
                 style={{ fontSize: "1.0625rem", maxWidth: "620px" }}
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Selected Work ─────────────────────────────────────────────────── */}
+      {/*  Selected Work  */}
       <section className="section-white border-t border-[color:var(--line)] py-20">
         <div className="container">
           <div className="flex items-end justify-between mb-12">

@@ -19,7 +19,7 @@ const deliveries = [
   },
   {
     id: 2,
-    client: "Confidential Client",
+    client: "Client",
     clientHref: null,
     type: "Automation & Integration",
     status: "In Production",
@@ -39,7 +39,7 @@ const deliveries = [
 const services = [
   {
     title: "Computer Vision & Perception",
-    desc: "Detection, classification, segmentation, and tracking systems — from prototype to production.",
+    desc: "Detection, classification, segmentation, and tracking systems, from prototype to production.",
   },
   {
     title: "Automation & Integration",
@@ -51,31 +51,25 @@ const services = [
   },
   {
     title: "Full-Stack Web",
-    desc: "End-to-end MERN or FastAPI applications — APIs, dashboards, and real-time features.",
+    desc: "End-to-end MERN or FastAPI applications, APIs, dashboards, and real-time features.",
   },
 ];
 
 export default function Studio() {
   return (
     <main>
-      {/* ── Studio Hero ──────────────────────────────────────────────────── */}
+      {/*  Studio Hero  */}
       <section className="pt-36 pb-20 border-b border-[color:var(--line)]">
         <div className="container">
           {/* Wordmark */}
           <div className="flex items-center gap-3 mb-10">
-            <div
-              className="flex items-center justify-center flex-shrink-0"
-              style={{
-                width: 36,
-                height: 36,
-                background: "var(--accent)",
-                borderRadius: "var(--r-sm)",
-              }}
-            >
-              <span style={{ color: "#fff", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.02em" }}>
-                2C
-              </span>
-            </div>
+            <img
+              src="/Logo.png"
+              alt="theTwoCubes"
+              width={28}
+              height={28}
+              style={{ objectFit: "contain" }}
+            />
             <span
               className="font-semibold text-[color:var(--ink)]"
               style={{ fontSize: "1rem", fontFamily: "var(--font-body)", letterSpacing: "-0.01em" }}
@@ -91,13 +85,14 @@ export default function Studio() {
             >
               Software that ships.
             </h1>
+            <br />
             <p
               className="mt-6 text-[color:var(--ink-muted)] leading-relaxed"
-              style={{ fontSize: "1.0625rem", maxWidth: "500px" }}
+              style={{ fontSize: "1.0625rem", maxWidth: "620px" }}
             >
-              theTwoCubes is a small software consulting studio run from IIT Mandi.
-              We scope well-defined problems and deliver working software — from initial
-              requirements to production deployment.
+              theTwoCubes is a software engineering studio founded at IIT Mandi. 
+              We partner with startups and businesses to design, build, and deploy scalable software, from AI-powered 
+              automation and web applications to custom business solutions, taking projects from initial discovery to production
             </p>
             <div className="flex flex-wrap gap-3 mt-8">
               <a
@@ -134,7 +129,7 @@ export default function Studio() {
             </div>
             <div>
               <p className="text-2xl font-semibold text-[color:var(--ink)]" style={{ letterSpacing: "-0.03em" }}>
-                Oct '24
+                Aug '25
               </p>
               <p className="text-xs text-[color:var(--ink-faint)] mt-1 uppercase tracking-widest font-medium">
                 Founded
@@ -144,11 +139,11 @@ export default function Studio() {
         </div>
       </section>
 
-      {/* ── What we build ────────────────────────────────────────────────── */}
+      {/*  What we build  */}
       <section className="section-white py-20 border-b border-[color:var(--line)]">
         <div className="container">
           <p className="eyebrow mb-10">Services</p>
-
+          <br />
           <div className="grid sm:grid-cols-2 gap-x-16 gap-y-10 max-w-3xl">
             {services.map((s) => (
               <div key={s.title}>
@@ -165,18 +160,17 @@ export default function Studio() {
         </div>
       </section>
 
-      {/* ── Delivered ────────────────────────────────────────────────────── */}
+      {/*  Delivered  */}
       <section className="py-20">
         <div className="container">
           <p className="eyebrow mb-10">Delivered</p>
-
+          <br />
           <div className="space-y-12">
             {deliveries.map((d, i) => (
               <div
                 key={d.id}
-                className={`grid md:grid-cols-[280px_1fr] gap-8 md:gap-16 ${
-                  i < deliveries.length - 1 ? "pb-12 border-b border-[color:var(--line)]" : ""
-                }`}
+                className={`grid md:grid-cols-[280px_1fr] gap-8 md:gap-16 ${i < deliveries.length - 1 ? "pb-12 border-b border-[color:var(--line)]" : ""
+                  }`}
               >
                 {/* Meta */}
                 <div>
@@ -243,10 +237,11 @@ export default function Studio() {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────────────────── */}
+      {/*  CTA  */}
       <section className="section-white py-20 border-t border-[color:var(--line)]">
         <div className="container max-w-2xl">
           <p className="eyebrow mb-4">Open to Work</p>
+          <br />
           <h2
             className="text-[color:var(--ink)] mb-4"
             style={{ fontSize: "1.75rem" }}
@@ -254,10 +249,11 @@ export default function Studio() {
             Have a project in mind?
           </h2>
           <p className="text-sm text-[color:var(--ink-muted)] leading-relaxed mb-8" style={{ maxWidth: "460px" }}>
-            theTwoCubes takes on well-scoped software problems — particularly in computer
+            theTwoCubes takes on well-scoped software problems, particularly in computer
             vision, automation, and AI-integrated applications. Reach out with a brief
             description and we'll set up a call.
           </p>
+          <br />
           <div className="flex flex-wrap gap-3">
             <a href="mailto:akshatmittal2024@gmail.com" className="btn btn-outline">
               akshatmittal2024@gmail.com
